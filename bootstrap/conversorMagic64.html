@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Magic 64</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/magic64Converter.css">
+        <link rel="icon" type="image/png" href="img\Componente 1 – 1.svg"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+ 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navegacion">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" id="imagen" href="#">
+                    <img src="C:\Users\novasrodrigo\Desktop\Front\bootstrap\img\Componente 1 – 1.svg" alt="Icon" width="50" height="50">
+                </a> -->
+              <a class="navbar-brand" id="maxim" href="#">Magic Flask</a>
+              <a class="navbar-brand" id="reduc" href="#">MF</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Herramientas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Converter base</a></li>
+                      <li><a class="dropdown-item" href="#">Porfolio en construccion</a></li>
+                      <li><a class="dropdown-item" href="#">Bajar PDF</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://github.com/Rodrigo-Novas/conversor-base64" target="_blank">Github</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="alert alert-danger mt-2 fade show alert-dismissible">
+          <p class="mb-0 text-center">
+            <strong>Atencion! </strong>Esta webApp se encuentra en desarrollo en caso de querer aportar en diseño o para implementar nuevas funcionalidades realizar pull request al repositorio</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>   
+        
+        <form class="row g-3 mt-5 m-auto" method="POST">
+            <div class="col-12">
+                <label for="inputText" class="form-label mt-2 text-light h5">Ingrese su texto a convertir</label>
+                <input type="text" class="form-control mt-1 w-50" id="inputText" placeholder="Texto">
+                <input type="submit" class="btn btn-danger mt-3 ">
+            </div>
+        <form>
+        
+        <form class="row g-5 mt-5" method="POST">
+            <div class="col-12">
+                <label for="input64" class="form-label mt-2 text-light h5">Ingrese su base 64 a convertir</label>
+                <input type="text" class="form-control mt-1 w-50" id="input64" placeholder="Base 64">
+                <input type="submit" class="btn btn-success mt-3">
+            </div>
+        <form>
+
+          <div class="row">
+            <footer class="col-12 bg-dark text-center text-white mt-2">
+          <!-- Grid container -->
+              <!-- Section: Social media -->
+                <!-- Gmail -->
+                <a class="btn btn-outline-light  m-1" href="mailto:novasr4516@gmail.com" role="button"
+                target="_blank"><i class="fa fa-paper-plane"></i
+                ></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-info  m-1" href="https://www.linkedin.com/in/rodrigo-novas-927057165/" role="button"
+                target="_blank"><i class="fa fa-linkedin"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-danger  m-1" href="https://github.com/Rodrigo-Novas" role="button"
+                  target="_blank"><i class="fa fa-github"></i
+                ></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-primary  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-success  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-danger  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-instagram"></i
+                ></a>
+
+
+
+            </footer>
+          </div>
+        </div>
+        <script src="js/utils.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

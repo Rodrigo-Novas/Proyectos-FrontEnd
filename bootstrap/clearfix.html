@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicio bootstrap</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="bg-primary text-white p-4">Elemento de tipo bloque</div>    
+                    <span class="bg-success text-white d-block p-4 mt-4">Elemento de tipo linea</span> <!--Con d-block lo que hago es convertir el display del elemento de linea a bloque y entonces podemos cambiar el margin padding etc-->
+                    <span class="bg-success text-white d-block p-4 mt-4">Elemento de tipo linea</span>
+                    
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="clearfix">
+                            <div class="caja float-left bg-warning"></div>
+                            <div class="caja float-right bg-warning"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

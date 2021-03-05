@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flexbox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        
+       <div class="container">
+           <div class="row mt-3">
+                <div class="col">
+                    <h4>Tipos de Display Flex</h4>
+                    <hr>
+                    <div class="d-inline-flex bg-primary text-white p-3"> <!--El p le da margin en este caso le esta dando un margin de 3, d-flex lo que hace es darle display:flex-->
+                        <p class="mb-0">Display <strong>.d inline flex</strong></p> <!--mb-0 es margin boton el cero puede ser cualquier numero que le quieras dar al margin-->
+                    </div>
+                </div>
+           </div>
+           <div class="ro2 my-4"> <!--margen en el eje y osea arriba y abajo-->
+                <div class="col">
+                    <h4>Direccion</h4>
+                    <hr>
+                    <p>.flex-row</p>
+                    <div class="contenedor d-flex flex-row">
+                        <div>
+                            caja 1
+                        </div>
+                        <div>
+                            caja 2
+                        </div>
+                        <div>
+                            caja 3
+                        </div>
+                    </div>
+                    <p class="mt-4">.flex-row-reverse</p>
+                    <div class="contenedor d-flex flex-row-reverse">
+                        <div>
+                            caja 1
+                        </div>
+                        <div>
+                            caja 2
+                        </div>
+                        <div>
+                            caja 3
+                        </div>
+                    </div>
+                    <p class="mt-4">.flex-column-reverse</p>
+                    <div class="contenedor d-flex flex-column-reverse">
+                        <div>
+                            caja 1
+                        </div>
+                        <div>
+                            caja 2
+                        </div>
+                        <div>
+                            caja 3
+                        </div>
+                    </div>
+                    <!--Existe tambien cambiar el tipo de flex dependiendo el tamaño se utiliza por ejemplo flex-md-column, justify-md-content-start-->
+                    <p class="mt-4">Justify content</p>
+                    <hr>
+                    <p>Justify content start (cajas a la izquierda)</p>
+                    <div class="contenedor d-flex justify-content-start">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <p>Justify content center (cajas al centro)</p>
+                    <div class="contenedor d-flex justify-content-center">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <p>Justify content end (cajas a la derecha)</p>
+                    <div class="contenedor d-flex justify-content-end">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <p>Justify content between (espacio sobrante)</p>
+                    <div class="contenedor d-flex justify-content-between">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <p>Justify content arround (esacios totales)</p>
+                    <div class="contenedor d-flex justify-content-around">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <br>
+                    <h2>Align items</h2>
+                    <hr>
+                    <p>-align items start (cada caja va a tener su altura propia y se va a posicionar en la parte de arriba de nuestro contenedor</p>
+                    <div class="contenedor d-flex align-items-start">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <br>
+                    <p>Align items center</p>
+                    <div class="contenedor d-flex align-items-center">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+
+                    <br>
+                    <p>Align items end</p>
+                    <div class="contenedor d-flex align-items-end">
+                        <div>
+                            caja1
+                        </div>
+                        <div>
+                            caja2
+                        </div>
+                        <div>
+                            caja3
+                        </div>
+                    </div>
+                    <br>
+                    <p>WRAP</p>
+                    <hr>
+                    <p>No wrap</p>
+                    <div class="contenedor  d-flex flex-nowrap">
+                        <div>caja 1</div> <!--div*15{caja $}-->
+                        <div>caja 2</div>
+                        <div>caja 3</div>
+                        <div>caja 4</div>
+                        <div>caja 5</div>
+                        <div>caja 6</div>
+                        <div>caja 7</div>
+                        <div>caja 8</div>
+                        <div>caja 9</div>
+                        <div>caja 10</div>
+                        <div>caja 11</div>
+                        <div>caja 12</div>
+                    </div>
+                    <p>Wrap</p> <!--Pone abajo las caja si no entrar-->
+                    <div class="contenedor  d-flex flex-wrap ">
+                        <div>caja 1</div> <!--div*15{caja $}-->
+                        <div>caja 2</div>
+                        <div>caja 3</div>
+                        <div>caja 4</div>
+                        <div>caja 5</div>
+                        <div>caja 6</div>
+                        <div>caja 7</div>
+                        <div>caja 8</div>
+                        <div>caja 9</div>
+                        <div>caja 10</div>
+                        <div>caja 11</div>
+                        <div>caja 12</div>
+                        <div>caja 13</div>
+                        <div>caja 14</div>
+                        <div>caja 15</div>
+                        <div>caja 16</div>
+                    </div>
+                </div>
+           </div>
+       </div>
+        
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

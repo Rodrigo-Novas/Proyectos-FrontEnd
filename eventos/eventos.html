@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!-- <button id="btn-saludar">Saludo</button> -->
+        <button id="btn-crear">Crear caja</button>
+        <section id="caja">Caja</section>
+        
+        <script>
+
+            function crearCaja()
+            {
+                var caja = document.getElementById("caja")
+                var contenido = document.createTextNode("caja JS")
+                caja.appendChild(contenido) //lo coloco como hijo
+
+            }
+            function removerCaja()
+            {
+                var caja = document.getElementById("caja")
+            }
+            var crear = document.addEventListener("click", crearCaja)
+            // function saludo(){
+            //     alert("Hola")
+            // }
+            // function saludo2()
+            // {
+            //     alert ("hola2")
+            // }
+            // var btnSaludar = document.getElementById("btn-saludar");
+            // btnSaludar.addEventListener("click", saludo); //Esto se usa en lugar del onclick lo que hace es estar escuchando y cuando se ejecuta un evento ejecuta la funcion que le digamos
+            // btnSaludar.addEventListener("click", saludo2); //Esto se usa en lugar del onclick lo que hace es estar escuchando y cuando se ejecuta un evento ejecuta la funcion que le digamos
+            // btnSaludar.removeEventListener("click", saludo2);
+       </script>
+    </body>
+</html>

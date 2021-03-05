@@ -1,0 +1,40 @@
+.box
+{
+    width: 200px;
+    height: 200px;
+    background-color:#21295c;
+    transition:all 1s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+
+.box:hover
+{
+background-color: azure;
+transform:rotate3D(1,2,-1,180deg);
+}
+
+
+/*Animaciones*/
+
+@keyframes colores
+{
+    0%{background-color: #9eb3c2; width: 30%;}
+    25%{background-color: #1c7293;width: 40%;}
+    50%{background-color: #065a82;width: 50%;}
+    75%{background-color: #1b3b6f;width: 70%;}
+    100%{background-color: #21295c;width: 100%;}
+
+}
+
+
+.box2
+{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color:#9eb3c2;
+    animation-name:colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
